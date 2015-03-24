@@ -13,23 +13,35 @@ public class Condition {
 		switch(jong) {
 		case 1:
 			if(gr % 10 == 0) {
-				System.out.println(gsf + (300 * (gr/10 - 1)));
+				System.out.println("거리 : " + gr +"km");
+				System.out.println("차종 : 고속버스");
+				System.out.println("요금 : " + (gsf + (300 * (gr/10 - 1))) + "원");
 			} else {
-				System.out.println(gsf + (300 * gr/10));
+				System.out.println("거리 : " + gr +"km");
+				System.out.println("차종 : 고속버스");
+				System.out.println("요금 : " + (gsf + (300 * gr/10)) + "원");
 			}
 			break;
 		case 2:
 			if(gr % 10 == 0) {
-				System.out.println(kf + (200 * (gr/10 - 1)));
+				System.out.println("거리 : " + gr +"km");
+				System.out.println("차종 : 경차");
+				System.out.println("요금 : " + (kf + (200 * (gr/10 - 1))) + "원");
 			} else {
-				System.out.println(kf + (200 * gr/10));
+				System.out.println("거리 : " + gr +"km");
+				System.out.println("차종 : 경차");
+				System.out.println("요금 : " + (kf + (200 * gr/10)) + "원");
 			}
 			break;
 		default:
 			if(gr % 10 == 0) {
-				System.out.println(anotherf + (200 * (gr/10 -1)));
+				System.out.println("거리 : " + gr +"km");
+				System.out.println("차종 : 나머지");
+				System.out.println("요금 : " + (anotherf + (200 * (gr/10 -1))) + "원");
 			} else {
-				System.out.println(anotherf + (200 * gr/10));
+				System.out.println("거리 : " + gr +"km");
+				System.out.println("차종 : 나머지");
+				System.out.println("요금 : " + (anotherf + (200 * gr/10)) + "원");
 			}
 			break;
 		}
